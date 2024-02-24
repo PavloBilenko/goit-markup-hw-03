@@ -109,8 +109,18 @@ ol {
 
 .hw-two {
   background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .page-title {
+  margin-bottom: 48px;
+  width: 496px;
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
@@ -119,6 +129,13 @@ ol {
   text-align: center;
 }
 .order-service-btm {
+  min-width: 169px;
+  height: 56px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  border: none;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -134,9 +151,28 @@ ol {
 }
 .information {
 }
+.information-container {
+  padding: 120px 0;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .information-list {
+  display: flex;
+  gap: 24px;
 }
 .information-list-item {
+  width: calc((100% - 72px) / 4);
 }
 .information-list-title {
   font-size: 20px;
@@ -144,6 +180,7 @@ ol {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .information-list-text {
   font-size: 16px;
@@ -153,6 +190,14 @@ ol {
 .our-team {
   background-color: #f4f4fd;
 }
+.our-container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.our-team-list {
+  display: flex;
+  gap: 24px;
+}
 .our-team-title {
   font-size: 36px;
   font-weight: 700;
@@ -161,10 +206,16 @@ ol {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
-.our-team-list {
-  background-color: #ffffff;
+.our-team-list-item {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+  width: calc((100% - 72px) / 4);
 }
+
 .our-team-img {
 }
 .our-team-list-title {
@@ -174,6 +225,7 @@ ol {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .our-team-list-text {
   font-size: 16px;
@@ -181,7 +233,15 @@ ol {
   letter-spacing: 0.02em;
   text-align: center;
 }
+.our-team-description {
+  padding: 32px 0;
+}
+
 .our-portfolio {
+}
+.porfolio-container {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .our-portfolio-title {
   font-size: 36px;
@@ -191,10 +251,26 @@ ol {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .our-portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  row-gap: 48px;
+}
+.our-portfolio-list-item {
+  width: calc((100% - 48px) / 3);
 }
 .our-portfolio-list-img {
+}
+.portfolio-description {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  border-width: 0px 1px 1px 1px;
+  border-style: solid;
+  border-color: #e7e9fc;
 }
 .our-portfolio-list-title {
   font-size: 20px;
@@ -202,6 +278,7 @@ ol {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 .our-portfolio-list-text {
   font-size: 16px;
@@ -210,6 +287,11 @@ ol {
 }
 .footer {
   background-color: #2e2f42;
+}
+
+.footer-container {
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-logo {
@@ -226,6 +308,8 @@ ol {
   color: #f4f4fd;
 }
 .footer-text {
+  margin-top: 16px;
+  width: 264px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
